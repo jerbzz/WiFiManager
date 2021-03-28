@@ -142,7 +142,7 @@ def handle_root(client):
         <html>
             <h1 style="color: #5e9ca0; text-align: center;">
                 <span style="color: #ff0000;">
-                    Wi-Fi Client Setup
+                    Agile Indicator WiFi Setup
                 </span>
             </h1>
             <form action="configure" method="post">
@@ -169,31 +169,8 @@ def handle_root(client):
                     <input type="submit" value="Submit" />
                 </p>
             </form>
-            <p>&nbsp;</p>
-            <hr />
-            <h5>
-                <span style="color: #ff0000;">
-                    Your ssid and password information will be saved into the
-                    "%(filename)s" file in your ESP module for future usage.
-                    Be careful about security!
-                </span>
-            </h5>
-            <hr />
-            <h2 style="color: #2e6c80;">
-                Some useful infos:
-            </h2>
-            <ul>
-                <li>
-                    Original code from <a href="https://github.com/cpopp/MicroPythonSamples"
-                        target="_blank" rel="noopener">cpopp/MicroPythonSamples</a>.
-                </li>
-                <li>
-                    This code available at <a href="https://github.com/tayfunulu/WiFiManager"
-                        target="_blank" rel="noopener">tayfunulu/WiFiManager</a>.
-                </li>
-            </ul>
         </html>
-    """ % dict(filename=NETWORK_PROFILES))
+    """)
     client.close()
 
 
